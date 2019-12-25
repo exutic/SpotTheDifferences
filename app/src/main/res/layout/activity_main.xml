@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_img_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+
+    <TextView
+        android:id="@+id/main_txt_welcome"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/main_txt_mode_select"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:text="Select Your Difficulty"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_btn_back"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:onClick="buttonClickS"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        app:rippleColor="@android:color/holo_orange_dark"
+        app:strokeColor="@android:color/holo_purple"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_btn_play"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:onClick="buttonClickS"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533"
+        app:rippleColor="@android:color/holo_orange_dark"
+        app:strokeColor="@android:color/holo_purple"
+        app:strokeWidth="2dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_btn_about"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:onClick="buttonClickS"
+        android:text="About"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
+        app:rippleColor="@android:color/holo_orange_dark"
+        app:strokeColor="@android:color/holo_purple"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_btn_mode_easy"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:onClick="buttonClickS"
+        android:text="Easy"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662"
+        app:rippleColor="@android:color/holo_orange_dark"
+        app:strokeColor="@android:color/holo_purple"
+        app:strokeWidth="5dp" />
+
+    <TextView
+
+        android:id="@+id/main_txt_mode_easy_description"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_btn_mode_normal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:onClick="buttonClickS"
+        android:text="Normal"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662"
+        app:rippleColor="@android:color/holo_orange_dark"
+        app:strokeColor="@android:color/holo_purple"
+        app:strokeWidth="5dp" />
+
+    <TextView
+        android:id="@+id/main_txt_mode_normal_description"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_btn_mode_hard"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:onClick="buttonClickS"
+        android:text="Hard"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662"
+        app:rippleColor="@android:color/holo_red_light"
+        app:strokeColor="@android:color/holo_purple"
+        app:strokeWidth="5dp" />
+
+    <TextView
+        android:id="@+id/main_txt_mode_hard_description"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
+
+
+    <LinearLayout
+        android:id="@+id/main_mission_select_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/main_game_mode_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FFFF"
+            android:textSize="15sp"
+            android:textStyle="bold|italic" />
+
+        <GridLayout
+            android:id="@+id/main_mission_select_gridlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="6"
+            android:rowCount="5" />
+
+        <!--        <com.google.android.material.button.MaterialButton-->
+        <!--            android:id="@+id/main_btn_mission_1"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:gravity="center"-->
+        <!--            android:onClick="buttonClickS"-->
+        <!--            android:text="1"-->
+        <!--            app:rippleColor="@android:color/holo_purple"-->
+        <!--            app:strokeColor="@android:color/holo_blue_light"-->
+        <!--            app:strokeWidth="12dp" />-->
+
+
+        <!--        <com.google.android.material.button.MaterialButton-->
+        <!--            android:id="@+id/main_btn_mission_2"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:gravity="center"-->
+        <!--            android:onClick="buttonClickS"-->
+        <!--            android:text="2"-->
+        <!--            app:rippleColor="@android:color/holo_purple"-->
+        <!--            app:strokeColor="@android:color/holo_blue_light"-->
+        <!--            app:strokeWidth="12dp" />-->
+
+
+        <!--        <com.google.android.material.button.MaterialButton-->
+        <!--            android:id="@+id/main_btn_mission_3"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:gravity="center"-->
+        <!--            android:onClick="buttonClickS"-->
+        <!--            android:text="3"-->
+        <!--            app:rippleColor="@android:color/holo_purple"-->
+        <!--            app:strokeColor="@android:color/holo_blue_light"-->
+        <!--            app:strokeWidth="12dp" />-->
+
+
+        <!--        <com.google.android.material.button.MaterialButton-->
+        <!--            android:id="@+id/main_btn_mission_4"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:gravity="center"-->
+        <!--            android:onClick="buttonClickS"-->
+        <!--            android:text="4"-->
+        <!--            app:rippleColor="@android:color/holo_purple"-->
+        <!--            app:strokeColor="@android:color/holo_blue_light"-->
+        <!--            app:strokeWidth="12dp" />-->
+
+
+        <!--        <com.google.android.material.button.MaterialButton-->
+        <!--            android:id="@+id/main_btn_mission_5"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:gravity="center"-->
+        <!--            android:onClick="buttonClickS"-->
+        <!--            android:text="5"-->
+        <!--            app:rippleColor="@android:color/holo_purple"-->
+        <!--            app:strokeColor="@android:color/holo_blue_light"-->
+        <!--            app:strokeWidth="12dp" />-->
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_btnBackFromMissionSelect"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back_blue_24dp"
+        android:onClick="buttonClickS"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

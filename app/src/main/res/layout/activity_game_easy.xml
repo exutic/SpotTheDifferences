@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:id="@+id/game_main_layout_easy">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/game_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_btn_hint"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="hint"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textStyle="italic|bold"
+            app:strokeColor="@android:color/holo_orange_light"
+            app:strokeWidth="2dp" />
+
+        <TextView
+            android:id="@+id/game_txt_timer"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="timer" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_btn_giveup"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/exit_game"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textStyle="italic|bold"
+            app:strokeColor="@android:color/holo_orange_light"
+            app:strokeWidth="2dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/game_part_easy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5">
+
+
+        <ImageView
+            android:id="@+id/game_img1_part1_hard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/game_btn_dif_1_A_part1_easy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:background="#E4BE4A4A"
+            android:onClick="clicksEasy"
+            android:text="1A"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_img1_part1_hard"
+            app:layout_constraintEnd_toEndOf="@+id/game_img1_part1_hard"
+            app:layout_constraintStart_toStartOf="@+id/game_img1_part1_hard"
+            app:layout_constraintTop_toTopOf="@+id/game_img1_part1_hard" />
+
+        <Button
+            android:id="@+id/game_btn_dif_1_B_part1_easy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="#E4BE4A4A"
+            android:onClick="clicksEasy"
+            android:text="1B"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_img1_part1_hard"
+            app:layout_constraintEnd_toEndOf="@+id/game_img1_part1_hard"
+            app:layout_constraintStart_toStartOf="@+id/game_img1_part1_hard"
+            app:layout_constraintTop_toTopOf="@+id/game_img1_part1_hard" />
+
+        <Button
+            android:id="@+id/game_btn_dif_2_A_part1_easy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="#E4BE4A4A"
+            android:onClick="clicksEasy"
+            android:text="2A"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_img1_part1_hard"
+            app:layout_constraintEnd_toEndOf="@+id/game_img1_part1_hard"
+            app:layout_constraintStart_toStartOf="@+id/game_img1_part1_hard"
+            app:layout_constraintTop_toTopOf="@+id/game_img1_part1_hard" />
+
+        <Button
+            android:id="@+id/game_btn_dif_2_B_part1_easy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="#E4BE4A4A"
+            android:onClick="clicksEasy"
+            android:text="2B"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_img1_part1_hard"
+            app:layout_constraintEnd_toEndOf="@+id/game_img1_part1_hard"
+            app:layout_constraintStart_toStartOf="@+id/game_img1_part1_hard"
+            app:layout_constraintTop_toTopOf="@+id/game_img1_part1_hard" />
+
+        <Button
+            android:id="@+id/game_btn_dif_3_A_part1_easy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="#E4BE4A4A"
+            android:onClick="clicksEasy"
+            android:text="3A"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_img1_part1_hard"
+            app:layout_constraintEnd_toEndOf="@+id/game_img1_part1_hard"
+            app:layout_constraintStart_toStartOf="@+id/game_img1_part1_hard"
+            app:layout_constraintTop_toTopOf="@+id/game_img1_part1_hard" />
+
+        <Button
+            android:id="@+id/game_btn_dif_3_B_part1_easy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="#E4BE4A4A"
+            android:onClick="clicksEasy"
+            android:text="3B"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_img1_part1_hard"
+            app:layout_constraintEnd_toEndOf="@+id/game_img1_part1_hard"
+            app:layout_constraintStart_toStartOf="@+id/game_img1_part1_hard"
+            app:layout_constraintTop_toTopOf="@+id/game_img1_part1_hard" />
+
+        <Button
+            android:id="@+id/game_btn_dif_4_A_part1_easy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="#E4BE4A4A"
+            android:onClick="clicksEasy"
+            android:text="4A"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_img1_part1_hard"
+            app:layout_constraintEnd_toEndOf="@+id/game_img1_part1_hard"
+            app:layout_constraintStart_toStartOf="@+id/game_img1_part1_hard"
+            app:layout_constraintTop_toTopOf="@+id/game_img1_part1_hard" />
+
+        <Button
+            android:id="@+id/game_btn_dif_4_B_part1_easy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="#E4BE4A4A"
+            android:onClick="clicksEasy"
+            android:text="4B"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_img1_part1_hard"
+            app:layout_constraintEnd_toEndOf="@+id/game_img1_part1_hard"
+            app:layout_constraintStart_toStartOf="@+id/game_img1_part1_hard"
+            app:layout_constraintTop_toTopOf="@+id/game_img1_part1_hard" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/game_endgame_pop_up_layout_easy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9A000000"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="55dp">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/game_endgame_pop_up_home_button_easy_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/home"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="50dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/game_endgame_pop_up_next_button_easy_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/refresh"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="50dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/game_endgame_pop_up_resume_button_easy_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/close"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="50dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/game_endgame_pop_up_next_mission_button_easy_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    android:visibility="gone"
+                    app:icon="@drawable/next"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="50dp" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

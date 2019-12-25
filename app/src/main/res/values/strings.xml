@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Spot Spots _ edit</string>
+
+
+    <string name="welcome">Welcome</string>
+    <string name="mode_select">Select Your Difficulty</string>
+    <string name="easy_mode">5 photos \n Guess 4 Spot \n Time:30secs \n </string>
+    <string name="normal_mode">5 photos \n Guess 5 Spot \n Time:45secs \n </string>
+    <string name="hard_mode">5 photos \n Guess 6 Spot \n Time:60secs \n </string>
+
+    <string name="text_about">Welcome to About \n Go Enjoy the game</string>
+
+
+    <string name="time_remains">Time remaining : </string>
+
+
+
+    <string name="easy_mode_title">Easy Mode : Mission Select</string>
+    <string name="normal_mode_title">Normal Mode : Mission Select</string>
+    <string name="hard_mode_title">Hard Mode : Mission Select</string>
+
+
+    <string name="exit_game">Exit Game</string>
+
+</resources>
